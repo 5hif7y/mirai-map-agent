@@ -1,0 +1,39 @@
+{
+  "unit": 16,
+  "textures": {"floor": "dev_floor", "wall": "dev_wall", "ceiling": "dev_ceiling"},
+  "rooms": [
+    {"name": "tspawn",    "x": 76,  "y": 8,   "w": 40, "d": 24, "floor": 0, "height": 16},
+    {"name": "ctspawn",   "x": 76,  "y": 160, "w": 40, "d": 24, "floor": 0, "height": 16},
+    {"name": "tjunction", "x": 80,  "y": 40,  "w": 32, "d": 20, "floor": 0, "height": 16},
+    {"name": "mid",       "x": 84,  "y": 76,  "w": 24, "d": 24, "floor": 0, "height": 16},
+    {"name": "ahall",     "x": 28,  "y": 76,  "w": 28, "d": 24, "floor": 0, "height": 16},
+    {"name": "bhall",     "x": 136, "y": 76,  "w": 28, "d": 24, "floor": 0, "height": 16},
+    {"name": "site_a",    "x": 20,  "y": 112, "w": 44, "d": 40, "floor": 0, "height": 16},
+    {"name": "site_b",    "x": 128, "y": 112, "w": 44, "d": 40, "floor": 0, "height": 16}
+  ],
+  "corridors": [
+    {"from": "tspawn",    "to": "tjunction", "width": 8},
+    {"from": "tjunction", "to": "mid",       "width": 8},
+    {"from": "mid",       "to": "ctspawn",   "width": 8},
+    {"from": "tjunction", "to": "ahall",     "width": 8},
+    {"from": "tjunction", "to": "bhall",     "width": 8},
+    {"from": "ahall",     "to": "site_a",    "width": 8},
+    {"from": "bhall",     "to": "site_b",    "width": 8},
+    {"from": "ctspawn",   "to": "site_a",    "width": 8},
+    {"from": "ctspawn",   "to": "site_b",    "width": 8}
+  ],
+  "entities": [
+    {"classname": "info_player_deathmatch", "room": "tspawn", "at": [8, 6]},
+    {"classname": "info_player_deathmatch", "room": "tspawn", "at": [20, 6]},
+    {"classname": "info_player_deathmatch", "room": "tspawn", "at": [32, 6]},
+    {"classname": "info_player_deathmatch", "room": "tspawn", "at": [14, 16]},
+    {"classname": "info_player_deathmatch", "room": "tspawn", "at": [26, 16]},
+    {"classname": "info_player_start", "room": "ctspawn", "at": [8, 6]},
+    {"classname": "info_player_start", "room": "ctspawn", "at": [20, 6]},
+    {"classname": "info_player_start", "room": "ctspawn", "at": [32, 6]},
+    {"classname": "info_player_start", "room": "ctspawn", "at": [14, 16]},
+    {"classname": "info_player_start", "room": "ctspawn", "at": [26, 16]},
+    {"classname": "info_bomb_target", "room": "site_a", "at": [22, 20]},
+    {"classname": "info_bomb_target", "room": "site_b", "at": [22, 20]}
+  ]
+}
