@@ -4,7 +4,7 @@ import "core:fmt"
 import "core:os"
 import "core:strings"
 import "core:testing"
-import agent "project:plugins/map_agent/editor/agent"
+import agent "./agent"
 
 @(private="file")
 temp_folder :: proc(name:string) -> string {

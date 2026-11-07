@@ -8,10 +8,10 @@ import "mirai:editor/api"
 import "mirai:project"
 import "mirai:std/base"
 import "mirai:std/serial"
-import agent "project:plugins/map_agent/editor/agent"
-import map_convert "project:plugins/map_convert/editor"
-import formats "project:plugins/map_convert/editor/formats"
-import mapfile "project:plugins/valve220/editor/mapfile"
+import agent "./agent"
+import map_convert "../../map_convert/editor"
+import formats "../../map_convert/editor/formats"
+import mapfile "../../valve220/editor/mapfile"
 
 // What an agent uses to write a map in two passes, as methods of the editor
 // API (and so of its MCP server):

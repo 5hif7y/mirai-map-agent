@@ -3,7 +3,7 @@ package map_agent_tools
 import "core:encoding/json"
 import "core:fmt"
 import "core:strings"
-import mapfile "project:plugins/valve220/editor/mapfile"
+import mapfile "../../../valve220/editor/mapfile"
 
 // The structural pass of a generated map as data instead of brushes: rooms
 // and corridors on a grid, which layout_build turns into the brushes of a

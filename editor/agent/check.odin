@@ -4,7 +4,7 @@ import "core:fmt"
 import "core:math"
 import "core:slice"
 import "core:strings"
-import mapfile "project:plugins/valve220/editor/mapfile"
+import mapfile "../../../valve220/editor/mapfile"
 
 // What a generated map must keep between passes, measured without running the
 // game: the brushes of the structure stay as they were, and a player can walk
